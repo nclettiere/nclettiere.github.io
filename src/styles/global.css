@@ -1,4 +1,15 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SourceSerifPro";
+  src: url("../../public/assets/fonts/SourceSerifPro-Regular.ttf");
+}
+
+ h1 {
+  font-family: SourceSerifPro, serif;
+ }
 
 a {
   @apply text-blue-700;
