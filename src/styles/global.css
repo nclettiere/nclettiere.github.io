@@ -7,9 +7,21 @@
   src: url("../../public/assets/fonts/SourceSerifPro-Regular.ttf");
 }
 
- h1 {
-  font-family: SourceSerifPro, serif;
- }
+.heading {
+  @apply font-heading;
+}
+
+* {
+  @apply font-heading;
+}
+
+h1 {
+  @apply font-heading;
+}
+
+h2 {
+  margin: 1rem 0 !important;
+}
 
 a {
   @apply text-blue-700;
@@ -19,9 +31,17 @@ a:hover {
   @apply border-b-2 border-blue-700;
 }
 
-@tailwind components;
+ul.ability-tree {
+  margin: 0 1em !important;
+}
 
-@tailwind utilities;
+.row {
+  padding: 3px 10px;
+}
+
+.row.odd {
+  background: rgba(0, 0, 0, 0.03);
+}
 
 .content p {
   @apply my-6;
@@ -29,4 +49,23 @@ a:hover {
 
 .content ul {
   @apply my-6;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.project-btn {
+  width: 237px;
+  height: 237px;
+  box-shadow: 0 0 0 1px #b3b3b3;
+  background: url("../../public/assets/images/QExample.png");
 }
