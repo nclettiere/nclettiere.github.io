@@ -18,5 +18,8 @@
   "[json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///c%3A/Users/JoJo/Documents/Projects/nclettiere.github.io/.github/workflows/deploy.yml"
   }
 }
