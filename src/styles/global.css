@@ -63,10 +63,66 @@ ul.ability-tree {
   margin: 0 !important;
 }
 
+.projects-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
 .project-btn {
   width: 237px;
   height: 237px;
-  box-shadow: 0 0 0 1px #b3b3b3;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 0 5px #d5d5d5;
+  transition: all .1s ease-out;
+  display: flex;
+  flex-direction: column-reverse;
+  cursor: pointer;
+}
+
+.project-btn.quester {
   background: url("../../public/assets/images/QExample.png");
-  transition: all .3s;
+}
+
+.project-btn.mandarina {
+  background: url("../../public/assets/images/Mandarina.png");
+}
+
+.project-btn.mandarina p {
+  font-size: 13pt;
+}
+
+.project-btn.paco {
+  background: url("../../public/assets/images/Paco.png");
+}
+
+.project-btn:hover {
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px #d5d5d5;
+}
+
+.proj-title {
+  height: 0;
+  opacity: 0;
+  padding: 12px 10px;
+  background: black;
+  transition: all .1s ease-in-out;
+}
+
+.proj-title h2, p {
+  margin: 0 !important;
+}
+
+.proj-title  p {
+  font-size: 14pt;
+}
+
+.project-btn:hover > .proj-title {
+  height: 100px;
+  opacity: 1;
+}
+
+.no-affect-trns {
+  pointer-events: none;
+  transform: none !important;
 }

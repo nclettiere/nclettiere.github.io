@@ -1,5 +1,4 @@
-import React, { ReactNode, useEffect, useState } from 'react';
-import useMouse from '@react-hook/mouse-position'
+import React, { ReactNode, useState } from 'react';
 
 import { Meta } from "@/layout/Meta";
 import { Main } from "@/templates/Main";
@@ -12,9 +11,10 @@ type IProjectsIndexProps = {
 };
 
 const Index = (props: IProjectsIndexProps) => {
-  const constrain = 100;
+  const constrain = 80;
   const [transformProp] = useState(new Map());
-  const [count, setCount] = useState(-1);
+  
+  props;
   
   function transforms(x : any, y : any, el : any) {
     let box = el.getBoundingClientRect();
@@ -30,10 +30,18 @@ const Index = (props: IProjectsIndexProps) => {
   }
 
   const removeSkewTransform = (e: any) => {
-    e.target.style.transform = "perspective(100px) rotateX(0deg) rotateY(0deg)";
+   if(!e.target.classList.contains('project-btn'))
+    return;
+
+    window.requestAnimationFrame(function(){
+      e.target.style.transform = "perspective(100px) rotateX(0deg) rotateY(0deg)";
+    });
   }
 
   const applySkewTransform = (e : any) => {
+    if(!e.target.classList.contains('project-btn'))
+      return;
+
     let xy = [e.clientX, e.clientY];
     let position = xy.concat([e.target]);
 
@@ -42,20 +50,35 @@ const Index = (props: IProjectsIndexProps) => {
     });
   };
 
-  useEffect(() => {
-    setCount(count + 1);
-    transformProp.forEach((trns, el) => {
-      el.style.transform  = trns;
-    });
-  }, []);
-
   return (
     <Main meta={<Meta title="Projects" description="Lorem ipsum" />}>
-      <Link href="/Projects/Quester/">
-        <div>
-          <div onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform} className="project-btn"></div>
-        </div>
-      </Link>
+      <div className='projects-container'>
+        <Link href="/Projects/Quester/">
+        <div className="project-btn quester" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+              <div className='no-affect-trns proj-title'>
+                <h2 className="text-2xl font-bold text-white">Quester</h2>
+                <p className="text-1xl text-gray-400">Game Development Tool</p>
+              </div>
+            </div>
+        </Link>
+
+        <Link href="/Projects/Quester/">
+        <div className="project-btn mandarina" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+              <div className='no-affect-trns proj-title'>
+                <h2 className="text-2xl font-bold text-white">Mandarina Tales</h2>
+                <p className="text-1xl text-gray-400">Indie Game for school project</p>
+              </div>
+            </div>
+        </Link>
+
+        <Link href="/Projects/Quester/">
+        <div className="project-btn paco" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+              <div className='no-affect-trns proj-title'>
+                <h2 className="text-2xl font-bold text-white">Paco: An Adventure Begins</h2>
+              </div>
+            </div>
+        </Link>
+      </div>
     </Main>
   );
 }
