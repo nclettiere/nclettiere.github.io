@@ -2,10 +2,10 @@ export const AppConfig = {
   site_name: 'Starter',
   title: 'Nextjs Starter',
   personal_name: 'Nicolas Cabrera Lettiere',
-  job_qualification: 'IT Analyst and Game Programmer',
+  job_qualification: 'IT Analyst and Game Developer',
   description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
   about_me:
-    'My name is Nicolas Cabrera, I\'m a competitive IT Analyst and Game Programmer inspired by tough problems.',
+    'My name is Nicolas Cabrera, I\'m a competitive IT Analyst and Game Developer inspired by tough problems.',
   abilities: [
     [
       '🔨',

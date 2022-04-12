@@ -9,7 +9,7 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
-  assetPrefix: isProd ? 'https://nclettiere.github.io' : './',
+  assetPrefix: isProd ? 'https://nclettiere.github.io' : '',
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',

@@ -68,4 +68,5 @@ ul.ability-tree {
   height: 237px;
   box-shadow: 0 0 0 1px #b3b3b3;
   background: url("../../public/assets/images/QExample.png");
+  transition: all .3s;
 }
