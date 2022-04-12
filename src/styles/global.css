@@ -69,6 +69,17 @@ ul.ability-tree {
   justify-content: space-between;
 }
 
+.projects-container.mobile {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-container.mobile .project-btn{
+  margin-bottom: 50px;
+}
+
 .project-btn {
   width: 237px;
   height: 237px;

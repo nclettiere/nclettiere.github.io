@@ -1,4 +1,5 @@
 import React, { ReactNode, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 
 import { Meta } from "@/layout/Meta";
 import { Main } from "@/templates/Main";
@@ -13,7 +14,7 @@ type IProjectsIndexProps = {
 const Index = (props: IProjectsIndexProps) => {
   const constrain = 80;
   const [transformProp] = useState(new Map());
-  
+
   props;
   
   function transforms(x : any, y : any, el : any) {
@@ -50,37 +51,73 @@ const Index = (props: IProjectsIndexProps) => {
     });
   };
 
-  return (
-    <Main meta={<Meta title="Projects" description="Lorem ipsum" />}>
-      <div className='projects-container'>
-        <Link href="/Projects/Quester/">
-        <div className="project-btn quester" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
-              <div className='no-affect-trns proj-title'>
-                <h2 className="text-2xl font-bold text-white">Quester</h2>
-                <p className="text-1xl text-gray-400">Game Development Tool</p>
+  const renderContent = () => {
+    if (isMobile) {
+      return (
+        <Main meta={<Meta title="Projects" description="Lorem ipsum" />}>
+          <div className='projects-container mobile'>
+            <Link href="/Projects/Quester/">
+            <div className="project-btn quester" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+                  <div className='no-affect-trns proj-title'>
+                    <h2 className="text-2xl font-bold text-white">Quester</h2>
+                    <p className="text-1xl text-gray-400">Game Development Tool</p>
+                  </div>
+                </div>
+            </Link>
+      
+            <Link href="/Projects/Quester/">
+            <div className="project-btn mandarina" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+                  <div className='no-affect-trns proj-title'>
+                    <h2 className="text-2xl font-bold text-white">Mandarina Tales</h2>
+                    <p className="text-1xl text-gray-400">Indie Game for school project</p>
+                  </div>
+                </div>
+            </Link>
+      
+            <Link href="/Projects/Quester/">
+            <div className="project-btn paco" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+                  <div className='no-affect-trns proj-title'>
+                    <h2 className="text-2xl font-bold text-white">Paco: An Adventure Begins</h2>
+                  </div>
+                </div>
+            </Link>
+          </div>
+        </Main>);
+    }
+    return (
+      <Main meta={<Meta title="Projects" description="Lorem ipsum" />}>
+        <div className='projects-container'>
+          <Link href="/Projects/Quester/">
+          <div className="project-btn quester" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+                <div className='no-affect-trns proj-title'>
+                  <h2 className="text-2xl font-bold text-white">Quester</h2>
+                  <p className="text-1xl text-gray-400">Game Development Tool</p>
+                </div>
               </div>
-            </div>
-        </Link>
+          </Link>
+    
+          <Link href="/Projects/Quester/">
+          <div className="project-btn mandarina" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+                <div className='no-affect-trns proj-title'>
+                  <h2 className="text-2xl font-bold text-white">Mandarina Tales</h2>
+                  <p className="text-1xl text-gray-400">Indie Game for school project</p>
+                </div>
+              </div>
+          </Link>
+    
+          <Link href="/Projects/Quester/">
+          <div className="project-btn paco" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
+                <div className='no-affect-trns proj-title'>
+                  <h2 className="text-2xl font-bold text-white">Paco: An Adventure Begins</h2>
+                </div>
+              </div>
+          </Link>
+        </div>
+      </Main>
+    );
+  };
 
-        <Link href="/Projects/Quester/">
-        <div className="project-btn mandarina" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
-              <div className='no-affect-trns proj-title'>
-                <h2 className="text-2xl font-bold text-white">Mandarina Tales</h2>
-                <p className="text-1xl text-gray-400">Indie Game for school project</p>
-              </div>
-            </div>
-        </Link>
-
-        <Link href="/Projects/Quester/">
-        <div className="project-btn paco" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
-              <div className='no-affect-trns proj-title'>
-                <h2 className="text-2xl font-bold text-white">Paco: An Adventure Begins</h2>
-              </div>
-            </div>
-        </Link>
-      </div>
-    </Main>
-  );
+  return renderContent();
 }
 
 export default Index;
