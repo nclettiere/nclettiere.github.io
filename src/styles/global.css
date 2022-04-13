@@ -7,6 +7,11 @@
   src: url("../../public/assets/fonts/SourceSerifPro-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
 .heading {
   @apply font-heading;
 }
@@ -99,13 +104,78 @@ ul.ability-tree {
   background: url("../../public/assets/images/Mandarina.png");
 }
 
+.project-btn.paco {
+  background: url("../../public/assets/images/Paco.png");
+}
+
+.q-main-window {
+  height: 500px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 0 5px #d5d5d5;
+  background: url("../../public/assets/images/MainWindow.png");
+}
+
+.p-main {
+  height: 500px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 0 5px #d5d5d5;
+  background: url("../../public/assets/images/PacoMain.png");
+}
+
+.external-container {
+  max-width: 219px;
+  min-width: 219px;
+  min-height: 130px;
+  background: #fffbf5;
+  border: 1px solid #e6cec2;
+  box-shadow: 0px 0 5px #d5d5d58c;
+  padding: 10px;
+  margin: 30px 0;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.external-container .content h2 {
+  display: flex;
+  align-items: center;
+}
+
+.external-container .content h2 svg {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.external-container .content p {
+  font-size: 10pt;
+  font-family: "Poppins";
+}
+
+.external-container .links {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.external-container .links a {
+  padding: 5px 15px;
+  background: #007cff;
+  font-family: "Poppins";
+  border-radius: 100px;
+  color: white;
+  font-size: 12pt;
+  display: flex;
+}
+
+.external-container .links a svg {
+  width: 20px;
+  margin-left: 10px;
+}
+
 .project-btn.mandarina p {
   font-size: 13pt;
 }
 
-.project-btn.paco {
-  background: url("../../public/assets/images/Paco.png");
-}
 
 .project-btn:hover {
   border: 2px solid black;
@@ -128,6 +198,12 @@ ul.ability-tree {
   font-size: 14pt;
 }
 
+.proj-title.mobile {
+  height: 100px;
+  opacity: 1;
+}
+
+
 .project-btn:hover > .proj-title {
   height: 100px;
   opacity: 1;
@@ -136,4 +212,37 @@ ul.ability-tree {
 .no-affect-trns {
   pointer-events: none;
   transform: none !important;
+}
+
+.m-20 {
+  margin: 20px 0px;
+}
+
+.filling-500 {
+  height: 500px;
+}
+
+.soon {
+  margin: 80px 0 !important;
+  text-align: center;
+}
+
+.links-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.links-container.mobile {
+  margin: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.links-container.mobile .external-container {
+  width: 100%;
 }

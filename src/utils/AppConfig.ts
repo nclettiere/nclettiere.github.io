@@ -5,7 +5,7 @@ export const AppConfig = {
   job_qualification: 'IT Analyst and Game Developer',
   description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
   about_me:
-    'My name is Nicolas Cabrera, I\'m a competitive IT Analyst and Game Developer inspired by tough problems.',
+    'I\'m a competitive IT Analyst and Game Developer inspired by tough problems.',
   abilities: [
     [
       '🔨',

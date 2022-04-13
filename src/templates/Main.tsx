@@ -4,6 +4,10 @@ import Link from "next/link";
 
 import { AppConfig } from "@/utils/AppConfig";
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonRays, faBookBookmark, faMessage } from '@fortawesome/free-solid-svg-icons'
+
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
@@ -22,28 +26,30 @@ const Main = (props: IMainProps) => (
           <div className="text-xl heading">{AppConfig.job_qualification}</div>
         </div>
         <div>
-          <ul className="flex flex-wrap text-xl">
+          <ul style={{display: 'flex', justifyContent: 'center'}} className="flex flex-wrap text-xl">
             <li className="mr-6">
               <Link href="/">
-                <a className="border-none text-gray-700 hover:text-gray-900">
-                  About Me
+                <a style={{display: 'flex'}} className="border-none text-gray-700 hover:text-gray-900">
+                  <FontAwesomeIcon style={{marginRight: '10px', width: '20px'}} className="fa-xs" icon={faPersonRays} size="xs" />
+                  About Me 
                 </a>
               </Link>
             </li>
             <li className="mr-6">
               <Link href="/Projects/">
-                <a className="border-none text-gray-700 hover:text-gray-900">
+                <a style={{display: 'flex'}}  className="border-none text-gray-700 hover:text-gray-900">
+                  <FontAwesomeIcon style={{marginRight: '10px', width: '20px'}} className="fa-xs" icon={faBookBookmark} size="xs" />
                   My Projects
                 </a>
               </Link>
             </li>
             <li className="mr-6">
-              <a
-                className="border-none text-gray-700 hover:text-gray-900"
-                href="https://github.com/ixartz/Next-js-Boilerplate"
-              >
-                My Links
-              </a>
+              <Link href="/Contact/">
+                <a style={{display: 'flex'}}  className="border-none text-gray-700 hover:text-gray-900">
+                  <FontAwesomeIcon style={{marginRight: '10px', width: '20px'}} className="fa-xs" icon={faMessage} size="xs" />
+                  Contact Information
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

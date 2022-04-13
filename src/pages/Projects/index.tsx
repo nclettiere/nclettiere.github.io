@@ -58,7 +58,7 @@ const Index = (props: IProjectsIndexProps) => {
           <div className='projects-container mobile'>
             <Link href="/Projects/Quester/">
             <div className="project-btn quester" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
-                  <div className='no-affect-trns proj-title'>
+                  <div className='no-affect-trns proj-title mobile'>
                     <h2 className="text-2xl font-bold text-white">Quester</h2>
                     <p className="text-1xl text-gray-400">Game Development Tool</p>
                   </div>
@@ -67,16 +67,16 @@ const Index = (props: IProjectsIndexProps) => {
       
             <Link href="/Projects/Quester/">
             <div className="project-btn mandarina" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
-                  <div className='no-affect-trns proj-title'>
+                  <div className='no-affect-trns proj-title mobile'>
                     <h2 className="text-2xl font-bold text-white">Mandarina Tales</h2>
                     <p className="text-1xl text-gray-400">Indie Game for school project</p>
                   </div>
                 </div>
             </Link>
       
-            <Link href="/Projects/Quester/">
+            <Link href="/Projects/Paco/">
             <div className="project-btn paco" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
-                  <div className='no-affect-trns proj-title'>
+                  <div className='no-affect-trns proj-title mobile'>
                     <h2 className="text-2xl font-bold text-white">Paco: An Adventure Begins</h2>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const Index = (props: IProjectsIndexProps) => {
               </div>
           </Link>
     
-          <Link href="/Projects/Quester/">
+          <Link href="/Projects/Paco/">
           <div className="project-btn paco" onMouseMove={applySkewTransform} onMouseLeave={removeSkewTransform}>
                 <div className='no-affect-trns proj-title'>
                   <h2 className="text-2xl font-bold text-white">Paco: An Adventure Begins</h2>

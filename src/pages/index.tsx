@@ -19,7 +19,7 @@ const Index = () => {
     >
       {AppConfig.about_me}
 
-      <h2 className="text-2xl font-bold text-gray-900">My Abilities</h2>
+      <h2 className="text-2xl font-bold text-gray-900">My Skills</h2>
       <ul className="ability-tree">
         {AppConfig.abilities.map(function (d, idx) {
           return (

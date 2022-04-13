@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       heading: ["SourceSerifPro", "serif"],
+      sans: ["Poppins", "sans-serif"]
     },
     extend: {
       colors: {
