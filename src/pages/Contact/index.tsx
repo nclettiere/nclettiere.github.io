@@ -59,7 +59,7 @@ const Index = (props: IProjectsIndexProps) => {
             </div>
             <div className="links">
               <a className="border-none text-gray-700 hover:text-gray-900"
-                 href="https://github.com/nclettiere/nclettiere.github.io/raw/master/CV_ES_Nicolas_Cabrera_Lettiere-1.pdf"
+                 href="https://github.com/nclettiere/nclettiere.github.io/raw/master/CV_ES_Nicolas_Cabrera_Lettiere.pdf"
               >
                 Download <FontAwesomeIcon style={{width: '15px'}} icon={faFilePdf} />
               </a>
