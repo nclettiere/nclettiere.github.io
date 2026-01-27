@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Hello. I&apos;m Nicolás Cabrera.</title>
+ <link href="https://nclettiere.github.io//atom.xml" rel="self"/>
+ <link href="https://nclettiere.github.io//"/>
+ <updated>2026-01-27T02:38:39-03:00</updated>
+ <id>https://nclettiere.github.io/</id>
+ <author>
+   <name>Nicolás Cabrera</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Game Jams</title>
+   <link href="https://nclettiere.github.io//game-development/design/2016/02/20/phantom-jekyll-template.html"/>
+   <updated>2016-02-20T18:15:00-03:00</updated>
+   <id>https://nclettiere.github.io//game-development/design/2016/02/20/phantom-jekyll-template</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Quester</title>
+   <link href="https://nclettiere.github.io//development/design/2016/02/20/rescue-themes.html"/>
+   <updated>2016-02-20T12:56:00-03:00</updated>
+   <id>https://nclettiere.github.io//development/design/2016/02/20/rescue-themes</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+
+</feed>

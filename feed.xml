@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello. I&apos;m Nicolás Cabrera.</title>
+    <description>I&apos;m a software developer and designer from Uruguay creating useful things for the web.</description>
+    <link>https://nclettiere.github.io//</link>
+    <atom:link href="https://nclettiere.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 27 Jan 2026 02:38:39 -0300</pubDate>
+    <lastBuildDate>Tue, 27 Jan 2026 02:38:39 -0300</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>Game Jams</title>
+        <description>
+</description>
+        <pubDate>Sat, 20 Feb 2016 18:15:00 -0300</pubDate>
+        <link>https://nclettiere.github.io//game-development/design/2016/02/20/phantom-jekyll-template.html</link>
+        <guid isPermaLink="true">https://nclettiere.github.io//game-development/design/2016/02/20/phantom-jekyll-template.html</guid>
+        
+        <category>game-dev</category>
+        
+        <category>games</category>
+        
+        <category>projects</category>
+        
+        
+        <category>game-development</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>Quester</title>
+        <description>
+</description>
+        <pubDate>Sat, 20 Feb 2016 12:56:00 -0300</pubDate>
+        <link>https://nclettiere.github.io//development/design/2016/02/20/rescue-themes.html</link>
+        <guid isPermaLink="true">https://nclettiere.github.io//development/design/2016/02/20/rescue-themes.html</guid>
+        
+        <category>java</category>
+        
+        <category>tools</category>
+        
+        <category>gui</category>
+        
+        
+        <category>development</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+  </channel>
+</rss>
